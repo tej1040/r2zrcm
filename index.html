@@ -275,19 +275,21 @@ function searchAbbr() {
     });
 }
 
-// open modal
-document.querySelectorAll('.abbr-item').forEach(item => {
-    item.addEventListener('click', () => {
-        let key = item.dataset.abbr;
-        document.getElementById('detailTitle').innerText = key;
-        document.getElementById('detailDesc').innerText = details[key];
-        document.getElementById('detailModal').style.display = 'flex';
-    });
-});
-
 // close modal
 document.getElementById('closeBtn').onclick = () => {
     document.getElementById('detailModal').style.display = 'none';
+};
+
+// AUTO-SEARCH FROM URL PARAMETER
+window.onload = () => {
+    const params = new URLSearchParams(window.location.search);
+    const term = params.get("search");
+
+    if (term) {
+        const searchBox = document.getElementById("searchInput");
+        searchBox.value = term;
+        searchAbbr(); // run your existing search function
+    }
 };
 </script>
 
