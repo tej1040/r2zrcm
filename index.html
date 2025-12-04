@@ -117,6 +117,18 @@
         <div class="abbr-item" data-abbr="MCD"><strong>MCD</strong> - Medicaid</div>
         <div class="abbr-item" data-abbr="QMB"><strong>QMB</strong> - Qualified Medicare Beneficiary</div>
         <div class="abbr-item" data-abbr="MBI"><strong>MBI</strong> - Medicare Beneficiary Identifier</div>
+<div class="abbr-item" data-abbr="ESRD"><strong>ESRD</strong> - End-Stage Renal Disease</div>
+
+<div class="abbr-item" data-abbr="MSP"><strong>MSP</strong> - Medicare Secondary Payer</div>
+
+<div class="abbr-item" data-abbr="SSDI"><strong>SSDI</strong> - Social Security Disability Insurance</div>
+
+<div class="abbr-item" data-abbr="ALS"><strong>ALS</strong> - Amyotrophic Lateral Sclerosis</div>
+
+<div class="abbr-item" data-abbr="ACA"><strong>ACA</strong> - Affordable Care Act</div>
+
+<div class="abbr-item" data-abbr="HCBS"><strong>HCBS</strong> - Home and Community-Based Services</div>
+
         <div class="abbr-item" data-abbr="HICN"><strong>HICN</strong> - Health Insurance Claim Number</div>
         <div class="abbr-item" data-abbr="CARC"><strong>CARC</strong> - Claim Adjustment Reason Code</div>
         <div class="abbr-item" data-abbr="RARC"><strong>RARC</strong> - Remark Code</div>
@@ -144,9 +156,7 @@
         <div class="abbr-item" data-abbr="DOS"><strong>DOS</strong> - Date of Service</div>
         <div class="abbr-item" data-abbr="DOB"><strong>DOB</strong> - Date of Birth</div>
         <div class="abbr-item" data-abbr="DOI"><strong>DOI</strong> - Date of Injury</div>
-        <div class="abbr-item" data-abbr="DOA"><strong>DOA</strong> - Date of Accident</div>
-        <div class="abbr-item" data-abbr="HRA"><strong>HRA</strong> - Health Reimbursement Arrangement</div>
-        <div class="abbr-item" data-abbr="HSA"><strong>HSA</strong> - Health Savings Account</div>
+  	
 
     </div>
 </div>
@@ -197,6 +207,40 @@ const details = {
     "MCD":"Medicaid program for low-income patients.",
     "QMB":"Medicare program helping with premiums & deductibles.",
     "MBI":"Unique Medicare beneficiary ID.",
+"ESRD": `
+End-Stage Renal Disease (ESRD) is permanent kidney failure requiring dialysis or a kidney transplant. 
+ESRD patients automatically qualify for Medicare regardless of age. Eligibility is based on confirmed renal failure and ongoing dialysis treatment. Special billing rules apply under Medicare ESRD programs.
+`,
+
+"MSP": `
+Medicare Secondary Payer (MSP) refers to situations where Medicare is not the primary insurance. 
+Another insurance such as employer group health plans, auto liability, workers’ compensation, or no-fault insurance must be billed first. 
+MSP rules ensure correct payer order to prevent improper Medicare billing.
+`,
+
+"SSDI": `
+Social Security Disability Insurance (SSDI) provides monthly income to individuals unable to work due to a long-term disability. 
+After receiving SSDI benefits for 24 months, the individual becomes eligible for Medicare coverage regardless of age. 
+SSDI is determined by the Social Security Administration based on disability criteria and work history.
+`,
+
+"ALS": `
+Amyotrophic Lateral Sclerosis (ALS), also known as Lou Gehrig’s disease, is a progressive neurological condition that affects nerve cells controlling voluntary muscle movement. 
+Individuals diagnosed with ALS qualify for Medicare immediately without the standard 24-month SSDI waiting period. 
+Coverage starts the same month disability benefits begin.
+`,
+
+"ACA": `
+The Affordable Care Act (ACA) is a federal healthcare reform law designed to expand insurance access, protect consumers, and reduce healthcare costs. 
+Key features include marketplace insurance plans, coverage for pre-existing conditions, essential health benefits, Medicaid expansion, and financial subsidies for low-income families. 
+ACA plans often require eligibility verification and may include referral or authorization requirements.
+`,
+
+"HCBS": `
+Home and Community-Based Services (HCBS) are Medicaid-funded programs that allow eligible individuals to receive long-term care services in their home or community instead of a nursing facility. 
+Examples include personal care assistance, home health aide services, respite care, adult day programs, and homemaker services. 
+HCBS programs operate under Medicaid waivers and typically require prior authorization, with rules varying by state.
+`,
     "HICN":"Old Medicare number (retired).",
     "CARC":"Code explaining payer adjustment reason.",
     "RARC":"Additional explanation code on remittances.",
